@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatdango</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,500;1,700;1,900&family=Sen:wght@800&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <div class="navbar"></div>
+
+        <div class="navbar-container">
+            <div class="logo-container"></div>
+            <div class="menu-container"></div>
+           
+        </div>
+    <div class="sidebar"></div>
+
+    <header>
+        <h1>FlatDango Movie App</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Movies Currently Showing</h2>
+        <table>
+          <tr>
+            <th>Movie</th>
+            <th>Showtimes</th>
+          </tr>
+          <tr>
+            <td>Movie 1</td>
+            <td>
+              <ul>
+                <li>6:00pm</li>
+                <li>9:00pm</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Movie 2</td>
+            <td>
+              <ul>
+                <li>7:00pm</li>
+                <li>10:00pm</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <h2>Buy Tickets</h2>
+        <form id="ticket-form">
+          <label for="movie">Select a movie:</label>
+          <select name="movie" id="movie">
+            <option value="Movie 1">Movie 1</option>
+            <option value="Movie 2">Movie 2</option>
+          </select>
+          <br>
+          <label for="showtime">Select a showtime:</label>
+          <select name="showtime" id="showtime">
+            <option value="6:00pm">6:00pm</option>
+            <option value="9:00pm">9:00pm</option>
+            <option value="7:00pm">7:00pm</option>
+            <option value="10:00pm">10:00pm</option>
+          </select>
+          <br>
+          <label for="tickets">Number of tickets:</label>
+          <input type="number" name="tickets" id="tickets" min="1" value="1">
+          <br>
+          <input type="submit" value="Buy Tickets">
+        </form>
+      </main>
+      <footer>
+        <p>Copyright FlatDango 2022</p>
+      </footer>
+      <script src="index.js"></script>
+</body>
+</html>
+
+
